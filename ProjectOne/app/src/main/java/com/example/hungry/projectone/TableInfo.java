@@ -5,21 +5,31 @@ package com.example.hungry.projectone;
  */
 public class TableInfo {
 String Code;
-int from;
-int to;
-int qty;
+int from=100;
+int to=100;
+int qty=1;
 int total;
-
-TableInfo(String code,int from,int to,int qty,int total){
+int totalSum;
+TableInfo(String code,int from,int to,int qty,int total,int totalSum){
     this.Code=code;
     this.from=from;
     this.to=to;
     this.qty=qty;
     this.total=total;
+    this.totalSum=totalSum;
 }
 TableInfo(){
 
 }
+
+    public int getTotalSum() {
+        return totalSum;
+    }
+
+    public void setTotalSum(int totalSum) {
+        this.totalSum = totalSum;
+    }
+
     public String getCode() {
         return Code;
     }
